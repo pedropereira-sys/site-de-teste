@@ -1,0 +1,66 @@
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 12899,
+            "campanha_id": 12934,
+            "empresa_id": 249,
+            "usuario_id": 11443,
+            "audio_id": 3097,
+            "nome_campanha": "port 0112",
+            "status": 2,
+            "quantidade_leads": 32689,
+            "quantidade_filas": 30,
+            "tipo_envio_mensagem": 3,
+            "whatsapp_conexao": "7411,7413,7415",
+            "whatsapp_template": null,
+            "whatsapp_mensagem": null,
+            "encaminhamento_sip": 0,
+            "total_falta_ligar": 26711,
+            "total_convertido": 90,
+            "total_nao_atendidos": 3711,
+            "total_atendidos": 2328,
+            "total_nao_atendidos_dia": 3711,
+            "total_atendidos_dia": 2328,
+            "total_audio_dia": 0,
+            "total_convertido_dia": 90,
+            "daily_start_time": null,
+            "daily_stop_time": null,
+            "controle_disparo": null,
+            "created_at": "2025-12-01T12:37:21.000000Z",
+            "updated_at": "2025-12-01T14:01:25.000000Z",
+            "deleted_at": null,
+            "canais_associados": 6,
+            "porcentagem_conclusao": 18.47,
+            "audio": {
+                "id": 3097,
+                "nome_arquivo": "inss portabilidade 01-12",
+                "descricao": null,
+                "created_at": "2025-12-01T14:01:15.000000Z"
+            },
+            "empresa": {
+                "id": 249,
+                "nome_empresa": "PORTO FINANCEIRA",
+                "vendedores_ids": []
+            },
+            "usuario": {
+                "id": 11443,
+                "nome": "GILDERSON SA TELES PORTO",
+                "email": "gildersonfinanceira@hotmail.com.br",
+                "submaster_id": null,
+                "nivel": 50
+            },
+            "controle_filas_sip": null,
+            "campanha_historico": {
+                "id": 69150623,
+                "campanha_id": 12899,
+                "data": "2025-12-01",
+                "total_ligacoes": 6039,
+                "total_nao_atendidos": 3711,
+                "total_atendidos": 2328,
+                "total_audio": 90,
+                "total_convertido": 90
+            }
+        }
+    ]
+}

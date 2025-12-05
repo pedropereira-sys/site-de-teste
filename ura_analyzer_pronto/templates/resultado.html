@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="/static/css/final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ Relatórios Gerados</title>
+</head>
+<body>
+    <div class="container">
+        <div class="success-header">
+            <h1><span class="material-icons" style="font-size: 36px; color: #28a745; vertical-align: middle;">check_circle</span> Relatórios Gerados com Sucesso!</h1>
+            <p>Seus arquivos de análise estão prontos para uso. Tipo de campanha processada: <span class="file-type-tag">{{ tipo|upper }}</span></p>
+        </div>
+        
+        <div class="download-section">
+            <h2><span class="material-icons">download</span> Planilha de Análise</h2>
+            <p>Baixe a planilha completa com todas as métricas calculadas e os informativos em uma aba separada.</p>
+            
+            <a href="/download/{{ excel_path|urlencode }}" class="download-link">
+                <span class="material-icons">cloud_download</span> Baixar Planilha Excel (.xlsx)
+            </a>
+            
+            <div class="path-info">
+                <strong>Caminho gerado:</strong>
+                {{ excel_path }}
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h2><span class="material-icons">description</span> Informativos em Texto</h2>
+            <p>Os arquivos de texto (TXT) com os informativos personalizados por empresa/campanha foram criados.</p>
+            
+            <div class="path-info">
+                <strong>Pasta principal dos TXT's:</strong>
+                {{ txt_dir }}
+            </div>
+            
+            {% if resumo_dir %}
+            <div class="path-info" style="margin-top: 10px; border-left: 3px solid #667eea;">
+                <strong>Pasta de Resumos Consolidados (Apenas SMS):</strong>
+                {{ resumo_dir }}
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="download-section">
+            <h2><span class="material-icons">next_plan</span> Próximos Passos</h2>
+            <ul class="next-steps">
+                <li>**Revise a Planilha** para análise detalhada do desempenho.</li>
+                <li>**Compartilhe os Informativos** (*TXT*) com as equipes de atendimento e clientes.</li>
+                <li>Use os **Resumos Consolidados** para visão estratégica (se aplicável).</li>
+                <li>**Pronto para um novo upload?** Clique no link abaixo!</li>
+            </ul>
+            <a href="/" class="download-link" style="background: #34495e; margin-top: 20px;">
+                <span class="material-icons">upload_file</span> Voltar para Novo Upload
+            </a>
+        </div>
+
+        <div class="timestamp">
+            Processamento concluído em: **{{ timestamp }}**
+        </div>
+    </div>
+</body>
+</html>

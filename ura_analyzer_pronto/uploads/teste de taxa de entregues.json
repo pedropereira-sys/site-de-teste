@@ -1,0 +1,25 @@
+{
+    "current_page": 1,
+    "data": [
+        {
+            "usuario_id": 2928,
+            "nome_usuario": "Janaina Samirah",
+            "email_usuario": "janaina.samirah@credi10.com",
+            "empresa": "Credi10",
+            "campanha_id": 3032,
+            "nome_campanha": "SAQUE DANI 2111",
+            "data_hora_envio": "2025-11-21 08:50:14",
+            "data_criacao": "2025-11-21 08:50:14",
+            "total_disparos": 977,
+            "enviados": 0,
+            "entregue": 10,
+            "invalidas": 0,
+            "cliques": 200,
+            "total_respostas": 0,
+            "conexao_ids": "[1650]",
+            "conexao_id": null,
+            "percentual_concluido": 0,
+            "status": "Pendente"
+        }
+    ]
+}
